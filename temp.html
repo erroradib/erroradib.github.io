@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: black;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .image {
+            width: 50%;
+            height: auto;
+            animation: slide 5s infinite alternate;
+        }
+        @keyframes  slide{
+            0% {
+                transform: translateX(-50%);
+            }
+            100% {
+                transform: translateX(50%);
+            }
+        }
+    </style>
+</head>
+<body>
+  <div class="image-container">
+      <img class="image" src="ahnaf.jpg" alt="ahnaf">
+      <img class="image" src="akib.jpg" alt="akib">
+  </div>
+</body>
+</html>
